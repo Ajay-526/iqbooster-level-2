@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Math games</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="gameoptions">
+            <h1>Welocome :) to level - 2<br><br>The Arithemetic Guessing Game</h1>
+            <p>Choose your maximum and minimum values to start the game</p>
+            max value:<br><input type="number" value="10" id="maxval"><br>
+            Number of questins:<br><input type="number" value="2" id="numquestions"><br>
+            select operators:<br>
+            <select id="selopt" multiple>
+                <option value="0" selected>&times;</option>
+                <option value="1" selected>/</option>
+                <option value="2" selected>+</option>
+                <option value="3" selected>-</option>
+                </select>
+        </div>
+        <div class="game"></div>
+        <script src="app.js"></script>
+        </body>
+        </html>
