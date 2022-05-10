@@ -5,6 +5,8 @@ const btn1=document.createElement('button');
 const output=document.createElement('div');
 const message=document.createElement('div');
 
+var count = 0;
+
 btn1.style.display='none';
 btn.classList.add('startBtn');
 btn1.classList.add('csvBtn');
@@ -99,7 +101,8 @@ function buildQuestions(div){
         else{
           player.score[div.indexval][3]= 'wrong';
           div.style.backgroundcolor= 'red';
-          myBtn.style.backgroundcolor= 'red';  
+          myBtn.style.backgroundcolor= 'red';
+          count+=1;  
         }
 
         checkComplete();
@@ -202,8 +205,16 @@ function getValues(){
             link.click();
             document.body.removeChild(link);
             console.log(holder);
-            alert('You are moving to the next level');
-            ///////
+            if(count >= (game.question/2))
+            {
+                alert('You are not moving to the next level - Please view the report');
+                //alert(game.question/2);
+                location.reload();
+            }
+            else{
+                alert('You are moving to the next level');
+                location.href = 'https://ajay-526.github.io/iqbooster-level-3/';
+            }
         }
 
     
