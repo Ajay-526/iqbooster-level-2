@@ -11,7 +11,7 @@ btn1.style.display='none';
 btn.classList.add('startBtn');
 btn1.classList.add('csvBtn');
 output.textContent="Click button to start game";
-btn.textContent="start game";
+btn.textContent="restart game";
 output.classList.add('output');
 message.classList.add('message');
 
@@ -212,7 +212,7 @@ function getValues(){
                 location.reload();
             }
             else{
-                alert('You are moving to the next level');
+                alert('You are moving toooo the next level');
                 location.href = 'https://ajay-526.github.io/iqbooster-level-3/';
             }
         }
